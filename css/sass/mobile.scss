@@ -1,0 +1,212 @@
+@import "vars";
+@import "mixins";
+
+@media screen and (max-width: 1024px){
+
+	header,
+	#introduction,
+	#work,
+	#about,
+	#contact{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#toolkit-outro,
+	#toolkit-outro-snipe{
+		display: none;
+	}
+
+	#contact-image{
+		background-attachment: scroll;
+	}
+
+} //1024
+
+@media screen and (max-width: 850px){
+
+	header,
+	#introduction,
+	#work,
+	#about,
+	#contact{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+} // 850
+
+@media screen and (max-width: 750px){
+
+	#introduction{
+		padding-top: $logoheight;
+		padding-bottom: $logoheight;
+	}
+
+	.work-cell{
+		width: 49.5%;
+		margin-bottom: 1vw;
+	}
+
+		.work-cell-overlay{
+			text-align: left;
+		}
+
+		.work-cell-9{
+			display: none;
+		}
+
+	#about{
+		padding-top: $logoheight;
+	}
+
+		.about-left{
+			width: 25%;
+			margin-bottom: $logoheight / 2;
+		}
+
+		.about-right{
+			width: 75%;
+		}
+
+	.contact-side-button{
+		width: 100%;
+	}
+
+	footer{
+		padding-top: $logoheight;
+	}
+
+}
+
+@media screen and (max-width: 625px){
+
+	#introduction{
+		h1{
+			br{
+				display: none;
+			}
+		}
+	}
+
+	.toolkit-sass{
+		background-color: $darkgrey;
+	}
+
+	#about{
+		padding-bottom: 0;
+	}
+
+	.about-left,
+	.about-right{
+		width: 100%;
+		padding-left: 0;
+		background-image: none;
+	}
+
+	.about-left{
+
+		span{
+			padding: 0;
+			border: 0 solid transparent;
+			font-weight: bold;
+			background-color: transparent;
+
+			&:after{
+				content: " :";
+			}
+		}
+
+		&:after{
+			display: none;
+		}
+	}
+
+}
+
+@media screen and (max-width: 550px){
+
+	#header-inner{
+		div:nth-child(2){
+			font-weight: bold;
+		}
+	}
+
+	.toolkit-cell{
+		width: 24%;
+	}
+
+		.toolkit-cell-mobile-off{
+			display: none;
+		}
+
+			#toolkit-mobile-intro{
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				font-weight: bold;
+				color: $blue;
+			}
+
+			#toolkit-intro,
+			.about-left-toolkit{
+				display: none;
+			}
+
+	#contact-inner{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+		#contact-image{
+			display: none;
+		}
+
+		#contact-side{
+			width: 100%;
+		}
+
+}
+
+@media screen and (max-width: 525px){
+
+	.work-cell{
+		width: 100%;
+		height: $logoheight * 3;
+	}
+
+		.work-cell-overlay{
+			text-align: left;
+		}
+
+	.toolkit-cell{
+		em:last-of-type{
+			font-size: .75em;
+	}
+}
+
+@media screen and (max-width: 450px){
+
+	#header-inner{
+		div:nth-child(2){
+			display: none;
+		}
+	}
+
+	#introduction{
+		h1{
+			em{
+				display: inline;
+			}
+
+			span{
+				display: none;
+			}
+		}
+	}
+
+}}

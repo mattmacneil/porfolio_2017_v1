@@ -1,0 +1,24 @@
+$black: #1c252c;
+$white: #efefef;
+$grey: lighten($black, 60%);
+$darkgrey: darken($grey, 10%);
+$red: red;
+$green: green;
+$blue: #2185C5;
+$orange: #FF7F66;
+
+///
+
+$body_background_color: $white;
+$body_background_image: url('../../images/stripe.png');
+
+$headline-font: "Arial Black", Gadget, sans-serif;
+$headline-weight: 700;
+
+$body-font: 'copy', Helvetica, sans-serif;
+$body-weight: 300;
+$body-text-color: $black;
+
+$logoheight: 3em;
+$headlinesize: 2em;
+$headlinesize-mobile: 1.75em;
