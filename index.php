@@ -42,7 +42,7 @@
 			</a>
 		</div><!-- work cell -->
 		<div class="work-cell work-cell-4">
-			<a href="http://www.littlefield1187.com/" target="_blank">
+			<a href="http://www.mattmacneil.com/work/littlefield" target="_blank">
 			<div class="work-cell-overlay">
 				Littlefield #stylebythesea
 			</div><!-- work cell overlay -->
